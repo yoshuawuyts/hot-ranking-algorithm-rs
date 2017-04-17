@@ -1,0 +1,10 @@
+[package]
+authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+name = "hot-ranking-algorithm-rust"
+version = "1.0.0"
+
+[lib]
+path = "main.rs"
+
+[dependencies]
+clippy = "0.0.124"
