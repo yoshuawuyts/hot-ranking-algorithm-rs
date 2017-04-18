@@ -22,7 +22,7 @@ println!('{}', ranking);
 ```
 
 ## API
-### `rank(upvotes: &i32, downvotes: &i32, timestamp: &SteadyTime, epoch: &SteadyTime) -> result: i32`
+### `rank(upvotes: &i32, downvotes: &i32, timestamp: Time::tm, epoch: Time::tm) -> result: i32`
 Calculate the relevancy of an item based on upvotes, downvotes, a current
 timestamp and the epoch at which the program is first run (e.g. no value can be
 lower than that).
