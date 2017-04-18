@@ -1,6 +1,7 @@
 [package]
 authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
 name = "hot-ranking-algorithm-rust"
+description = "Algorithm that measures how relevant a given data set is, kinda like Reddit"
 version = "1.0.0"
 license = "MIT"
 license-file = "LICENSE"
