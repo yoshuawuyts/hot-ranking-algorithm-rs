@@ -10,7 +10,7 @@ site that always has fresh, relevant content for people to discover.
 
 ## Installation
 ```sh
-$ cargo add {{PROJECTNAME}}
+$ cargo add hot-ranking-algorithm
 ```
 
 ## Links
