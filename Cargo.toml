@@ -2,7 +2,7 @@
 authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
 name = "hot-ranking-algorithm"
 description = "Algorithm that measures how relevant a given data set is, kinda like Reddit"
-version = "1.0.1"
+version = "2.0.0"
 license = "MIT"
 documentation = "https://github.com/yoshuawuyts/hot-ranking-algorithm-rs"
 homepage = "https://github.com/yoshuawuyts/hot-ranking-algorithm-rs"
