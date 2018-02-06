@@ -1,39 +1,33 @@
 # hot-ranking-algorithm-rs
+[![crates.io version][1]][2] [![build status][3]][4]
+[![downloads][5]][6] [![docs.rs docs][7]][8]
+
 Algorithm that measures how relevant a given data set is, kinda like Reddit.
 
 Doesn't do any jitter stuff and can probably be gamed if you try hard enough,
 but it should be useful enough if you want to wire up community-driven news
 site that always has fresh, relevant content for people to discover.
 
-## Usage
-```rust
-extern crate hot_ranking_algorithm;
-extern crate time;
-
-use hot-ranking-algorithm::rank;
-
-let epoch = time::now_utc();
-let timestamp = time::now_utc();
-let upvotes = 3;
-let downvotes = 1;
-let ranking = rank(upvotes, downvotes, timestamp, epoch);
-println!('{}', ranking);
-// => 2
-```
-
-## API
-### `rank(upvotes: &i32, downvotes: &i32, timestamp: Time::tm, epoch: Time::tm) -> result: i32`
-Calculate the relevancy of an item based on upvotes, downvotes, a current
-timestamp and the epoch at which the program is first run (e.g. no value can be
-lower than that).
-
 ## Installation
 ```sh
-$ cargo add hot-ranking-algorithm
+$ cargo add {{PROJECTNAME}}
 ```
+
+## Links
+- [documentation][8]
+- [crate][2]
 
 ## See Also
 - https://github.com/yoshuawuyts/pretty-hot-ranking-algorithm
 
 ## License
-[MIT](https://tldrlegal.com/license/mit-license)
+[Apache-2.0](./LICENSE)
+
+[1]: https://img.shields.io/crates/v/hot-ranking-algorithm.svg?style=flat-square
+[2]: https://crates.io/crate/hot-ranking-algorithm
+[3]: https://img.shields.io/travis/yoshuawuyts/hot-ranking-algorithm-rs.svg?style=flat-square
+[4]: https://travis-ci.org/yoshuawuyts/hot-ranking-algorithm-rs
+[5]: https://img.shields.io/crates/d/hot-ranking-algorithm.svg?style=flat-square
+[6]: https://crates.io/crate/hot-ranking-algorithm
+[7]: https://docs.rs/hot-ranking-algorithm/badge.svg?version=0.1.0
+[8]: https://docs.rs/crate/hot-ranking-algorithm

@@ -5,5 +5,4 @@ dist/
 npm-debug.log*
 .DS_Store
 .nyc_output
-Cargo.lock
 target/

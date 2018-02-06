@@ -4,14 +4,9 @@ name = "hot-ranking-algorithm"
 description = "Algorithm that measures how relevant a given data set is, kinda like Reddit"
 version = "1.0.1"
 license = "MIT"
-license-file = "LICENSE"
 documentation = "https://github.com/yoshuawuyts/hot-ranking-algorithm-rs"
 homepage = "https://github.com/yoshuawuyts/hot-ranking-algorithm-rs"
 repository = "https://github.com/yoshuawuyts/hot-ranking-algorithm-rs"
 
 [dependencies]
-clippy = "0.0.124"
-time = "0.1.36"
-
-[lib]
-path = "main.rs"
+chrono = "0.4.0"
